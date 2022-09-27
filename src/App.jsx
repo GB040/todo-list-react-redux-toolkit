@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { addTodo, fetchTodos } from './store/todoSlice';
+import { addNewTodo, fetchTodos } from './store/todoSlice';
 
 import TodoList from './components/TodoList'
 import InputField from './components/InputField';
@@ -9,14 +9,14 @@ import InputField from './components/InputField';
 import './App.css';
 
 function App() {
-  const [title, setText] = useState('');
+  const [title, setTitle] = useState('');
   const {status, error} = useSelector(state => state.todos);
   const dispatch = useDispatch();
 
   const addTask = () => {
     if (title.trim().length) {
-      dispatch(addTodo({ title }));
-      setText('');
+      dispatch(addNewTodo(title));
+      setTitle('');
     }
   };
 
@@ -24,13 +24,11 @@ function App() {
     dispatch(fetchTodos());
   }, [dispatch]);
 
-
- 
   return (
     <div className="App">
       <InputField
         text={title}
-        handleInput={setText}
+        handleInput={setTitle}
         handleSubmit={addTask}
       />
 
