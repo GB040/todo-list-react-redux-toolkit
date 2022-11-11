@@ -1,5 +1,6 @@
 {
   "name": "to-do-list",
+  "homepage": "https://gb040.github.io/todo-react-redux-toolkit-with-asyncthunk/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

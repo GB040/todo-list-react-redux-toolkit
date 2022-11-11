@@ -1,4 +1,4 @@
-# [**TODOS**]( "Ссылка на проект") 
+# [**TODOS**](https://gb040.github.io/todo-react-redux-toolkit-with-asyncthunk/ "Ссылка на проект") 
 
 ## Описание проекта
 
@@ -28,4 +28,4 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 ## Демоверсия
 
-
+https://gb040.github.io/todo-react-redux-toolkit-with-asyncthunk/
